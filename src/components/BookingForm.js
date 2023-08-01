@@ -210,45 +210,8 @@ function clearBooking(){
         }
     }
     );
-
-
     return cloneAvailableTimes;
 }*/
-
-
-
-/*const bookingConfirmation = (newBooking!==null) ? (
-
-    
-    <div className="booking-container">
-    <div className="booking-section">
-
-    <div className="booking-section-1">
-    <span className="section-title font-F4CE14">Confirmation of booking</span>
-    </div>
-
-    <div>
-
-     <ul>
-        <li>{newBooking.bookingDate}</li>
-        <li>{newBooking.bookingTime}</li>
-        <li>{newBooking.numDiners}</li>
-        <li>{newBooking.occasion}</li>
-        <li>{newBooking.comments}</li>
-        <li>{newBooking.firstName}</li>
-        <li>{newBooking.lastName}</li>
-        <li>{newBooking.email}</li>
-        <li>{newBooking.contact}</li>
-
-    </ul>
-
-   </div>
-   </div>
-   </div>
-    )
-
-    : false ;*/
-   
 
 
     return(

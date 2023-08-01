@@ -1,6 +1,6 @@
-import { Routes, Route, Link } from "react-router-dom";
 import logo from '../assets/logo.svg';
 import { HashLink } from 'react-router-hash-link';
+import { Link } from "react-router-dom";
 
 function Nav()
 {
@@ -14,7 +14,7 @@ function Nav()
 
         <nav id="top" className="container-flex" aria-label="navigation">
 
-            <Link to="home" ><img src={logo} alt="Little Lemon Restaurant logo" width="200"/></Link>
+            <Link to="/home" ><img src={logo} alt="Little Lemon Restaurant logo" width="200"/></Link>
 
             <ul >
                 <li><Link to="/home" >Home</Link></li>

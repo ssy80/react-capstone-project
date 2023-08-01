@@ -5,7 +5,7 @@ import Footer from "./views/Footer.js"
 import BookingPage from "./views/BookingPage";
 import BookingConfirmation from "./views/BookingConfirmation";
 
-import { Routes, Route, Link } from "react-router-dom";
+import { Routes, Route} from "react-router-dom";
 
 
 

@@ -24,7 +24,7 @@ function Hero()
                 </div>
 
                 <div className="hero-section-2"> 
-                <img src={restaurant_image} width="376" height="325" alt="Little Lemon Restaurant image"></img>
+                <img src={restaurant_image} width="376" height="325" alt="Little Lemon Restaurant"></img>
                 </div>
 
                 </section>

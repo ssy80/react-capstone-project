@@ -22,8 +22,8 @@ function About(){
                 </div>
 
                 <div className="about-section-1">
-                <img className="mario-pic" src={mario} alt="Mario and Adrian picture 1" width={272} height={338}/>
-                <img src={adrian} alt="Mario and Adrian picture 2" width={272} height={338}/>
+                <img className="mario-pic" src={mario} alt="Mario and Adrian" width={272} height={338}/>
+                <img src={adrian} alt="Mario and Adrian" width={272} height={338}/>
                 </div>
 
 
