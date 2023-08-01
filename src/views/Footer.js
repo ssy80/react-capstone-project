@@ -1,23 +1,33 @@
 import logo2 from "../assets/logo2.jpg";
 import { Link } from "react-router-dom";
+import { HashLink } from 'react-router-hash-link';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+    faFacebook,
+    faInstagram,
+    faTwitter,
+  } from "@fortawesome/free-brands-svg-icons";
 
 function Footer()
 {
 
 
+
+
     return(
         
-        <footer className="footer">
+        <footer className="footer" aria-label="footer">
             <p>
                 <img src={logo2} alt="Footer Little Lemon Restaurant logo" width="162" height="279" />
             </p>
            
            <ul>
-                <li><Link to="/" >Home</Link></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#special">Menu</a></li>
-                <li><a href="#testimonials">Testimonials</a></li>
+                <li><HashLink smooth to="/home#top" >Home</HashLink></li>
+                <li><HashLink smooth to="/home#about" >About</HashLink></li>
+                <li><HashLink smooth to="/home#specials" >Specials</HashLink></li>
+                <li><HashLink smooth to="/home#testimonials">Testimonials</HashLink></li>
                 <li><Link to="/booking" >Reservations</Link></li>
+ 
 
                
            </ul>
@@ -43,13 +53,13 @@ function Footer()
 
            <div>
             
-            <p>
+            
                 <ul>
-                    <li><a href="https://www.facebook.com">Facebook</a></li>
-                    <li><a href="https://www.instagram.com">Instagram</a></li>
-                    <li><a href="https://www.twitter.com">Twitter</a></li>           
+                    <li key="facebook"><a href="https://www.facebook.com"><FontAwesomeIcon icon={faFacebook} size="2x" /></a></li>
+                    <li key="instagram"><a href="https://www.instagram.com"><FontAwesomeIcon icon={faInstagram} size="2x" /></a></li>
+                    <li key="twitter"><a href="https://www.twitter.com"><FontAwesomeIcon icon={faTwitter} size="2x" /></a></li>           
             </ul>
-           </p>
+       
            </div>
 
         </footer>
@@ -58,3 +68,4 @@ function Footer()
 
 }
 export default Footer;
+

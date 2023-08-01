@@ -4,7 +4,7 @@
 
 import Hero from "./Hero.js";
 import Special from "./Special.js";
-import Testimonials from "./Testimonials";
+import Testimonials from "./Testimonials.js";
 import About from "./About.js";
 
 
@@ -20,15 +20,15 @@ function Main()
         
         <main className="container_flex">
 
-            <Hero id="hero-section" />
+            <Hero />
         
 
-            <Special />           
+            <Special/>           
 
           
-            <Testimonials />
+            <Testimonials/>
 
-            <About id="about-section" />
+            <About/>
 
 
 

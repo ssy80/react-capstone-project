@@ -138,6 +138,7 @@ li a:active{
   
   width:400px;
   padding: 5px 5px 5px 5px;
+  /*border: 1px solid #fff;*/
 }
 
 .hero-section-2{
@@ -163,8 +164,9 @@ li a:active{
   align-items: center;
   flex-wrap: wrap;
   width: 100%;
-  border: 1px solid #666;
-
+ /* border: 1px solid #666;*/
+  padding-left: 30px;
+  padding-right:30px;
   
 }
 
@@ -176,16 +178,17 @@ li a:active{
   flex-wrap: wrap;
   width: 100%;
   column-gap: 20px;
-  border: 1px solid #666;
+ /* border: 1px solid #666;*/
 }
 
 .card{
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: stretch;
+  align-items: stretch;
   border-radius: 16px;
-  width:256px;
+  /*width:256px;*/
   background-color: #EDEFEE;
   padding: 5px 5px 5px 5px;
   
@@ -223,7 +226,7 @@ li a:active{
   flex-wrap: wrap;
   width:100%;
   /*height:10%;*/
-  border: 1px solid #000000;
+  /*border: 1px solid #000000;*/
 }
 
 .testimonials-section-2{
@@ -238,7 +241,7 @@ li a:active{
   height:90%;
   width:100%;
 
-  border: 1px solid #000000;
+  /*border: 1px solid #000000;*/
   
 }
 
@@ -275,20 +278,20 @@ li a:active{
   width:100%;
   height: 600px;
   
-  border: 1px solid #000000;
+ /* border: 1px solid #000000;*/
   padding-top:10%;
 }
 
 .about-section-1{
   padding-left: 10px;
   /*width:50%;*/
-  border: 1px solid #000000;
+  /*border: 1px solid #000000;*/
 }
 
 .about-section-2{
 
   /*width:50%;*/
-  border: 1px solid #000000;
+  /*border: 1px solid #000000;*/
 }
 
 .about-desc{
@@ -319,7 +322,7 @@ li a:active{
   width:100%;
   height: 600px;
 
-  border: 1px solid #FFFFFF;
+ /* border: 1px solid #FFFFFF;*/
 
   /*padding: 10px 10px 10px 10px;*/
 
@@ -369,6 +372,10 @@ li a:active{
 
 /****style ****/
 
+html {
+  scroll-behavior: smooth;
+}
+
 .font-F4CE14{
   color: #F4CE14;
 }
@@ -382,13 +389,37 @@ li a:active{
   color: #495e57;
 }
 
+.font-red{
+  color: red;
+}
+
+.font-error{
+  color: #F4CE14;
+  font-weight: bold;
+}
+
+
+h1{
+  font-size: 64px;
+  line-height: 0.5;
+  font-weight: normal;
+}
+
 .section-title{
   font-size: 64px;
+}
+
+h2{
+  font-size: 40px;
+  line-height:0.5;
+  font-weight: normal;
 }
 
 .section-sub-title{
   font-size: 40px;
 }
+
+
 
 .section-desc{
   font-size: 32px;
@@ -436,40 +467,55 @@ li a:active{
 .button_link >  a{
   color: #000000;
   text-decoration:none;
+  cursor: pointer;
 }
 
 .button_link > a:link{
   color: #000000;
+  cursor: pointer;
 }
 
 .button_link > a:visited{
   color: #000000;
+  cursor: pointer;
 }
 
 .button_link > a:hover{
   color: #FFFFFF;
+  cursor: pointer;
 }
 
 .button_link > a:active{
   color: #000000;
+  cursor: pointer;
 }
 
-/*
-.footer li a:link{
-  
-}
-
-.footer  li a:visited{
+.button_link:hover{
   color: #FFFFFF;
 }
 
-.footer  li a:hover{
+.link-pointer{
+  cursor: pointer;
+}
+
+.text-link:hover{
   color: #F4CE14;
 }
 
-.footer  li a:active{
+
+.button_submit{
+  display:inline-block;
+  background-color: #F4CE14;
+  width: 200px;
+  padding: 10px 10px 10px 10px;
+  border-radius: 16px;
+  text-align: center;
+  font-size: 18px;
+}
+
+.button_submit:hover{
   color: #FFFFFF;
-}*/
+}
 
 
 
@@ -479,17 +525,18 @@ li a:active{
 .booking-container{
 
   display:flex;
-  flex-direction: row;
-  align-items:start;
+  flex-direction: column;
+  align-items:center;
   justify-content: center;
   flex-wrap: wrap;
 
   background-color: #495e57;
   width:100%;
-  height: 1200px;
+  /*height: 1200px;*/
 
   /*border: 1px solid #FFFFFF;*/
-
+  margin-left: auto;
+  margin-right: auto;
 
 }
 
@@ -510,6 +557,9 @@ li a:active{
 height:10%;
 /*border: 1px solid #000000;*/
 }
+
+
+
 
 /*.booking-section-2{
   display:grid;
@@ -552,6 +602,11 @@ height:10%;
 
    /* border: 1px solid #000000;*/
 
+  }
+
+  .booking-section-current{
+
+    /*border: 1px solid #FFFFFF;*/
   }
 
 

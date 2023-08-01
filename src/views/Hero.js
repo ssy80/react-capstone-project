@@ -6,12 +6,11 @@ function Hero()
 {
 
     return(
-                <section className="hero-section">
+                <section className="hero-section" aria-label="hero">
 
                 <div className="hero-section-1">
-                <p><span className="section-title font-F4CE14">Little Lemon</span><br/>
-                <span className="section-sub-title font-white">Chicago</span></p>
-                <br/>
+                <h1 className="font-F4CE14">Little Lemon</h1> 
+                <h2 className="font-white">Chicago</h2>
                 <p className="font-white" >
                     We are a family-owned Mediterranean 
                     restaurant, focused on traditional 
@@ -20,7 +19,7 @@ function Hero()
 
 
                 <br/>
-                <div className="button_link"><Link to="/booking" >Reserve a table</Link></div>
+                <div className="button_link" aria-label="reserve a table"><Link to="/booking" >Reserve a table</Link></div>
 
                 </div>
 
