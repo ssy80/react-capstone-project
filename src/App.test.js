@@ -29,7 +29,7 @@ test('test home page loaded properly', () => {
   const sectionElement2 = screen.getAllByText(sectionText2);
   const sectionElement3 = screen.getAllByText(sectionText3);
   expect(titleElement).toBeInTheDocument();
-  expect(sectionElement1).toHaveLength(1)
+  expect(sectionElement1).toHaveLength(3)
   expect(sectionElement2).toHaveLength(3);
   expect(sectionElement3).toHaveLength(3);
   
