@@ -54,8 +54,6 @@ function BookingPage(){
           }
 
 
-    
-
       };
 
     //get booked slots from storage
