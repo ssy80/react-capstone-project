@@ -6,7 +6,6 @@ import * as Yup from 'yup';
 function BookingForm(props){
 
  //   var currDate =new Date().toISOString().substring(0,10);
-  
 /*const [bookingDate, setBookingDate] = useState("");
 const [bookingTime,setBookingTime] = useState("");
 const [numDiners, setNumDiners] = useState(1);
@@ -27,12 +26,8 @@ const lastNameRef = useRef();
 const emailRef = useRef();
 const contactRef = useRef();
 
-const digitsOnly = (value) => /^\d+$/.test(value)
 
-
-    
-
-
+const digitsOnly = (value) => /^\d+$/.test(value);
 
 const formik = useFormik({
 
@@ -81,16 +76,9 @@ const formik = useFormik({
 
 
         onSubmit: values => {
-
             const toAddBookingSlot= {bookingDate:values.bookingDate, bookingTime:values.bookingTime, numDiners: values.numDiners, occasion: values.occasion, comments: values.comments, firstName: values.firstName, lastName: values.lastName, email: values.email, contact: values.contact};
             props.addBooking(toAddBookingSlot);
-    
-
         }
-
-
-
-
 });
 
 
